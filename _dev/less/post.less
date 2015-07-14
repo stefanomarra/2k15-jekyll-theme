@@ -1,0 +1,97 @@
+.post-header {
+	position: relative;
+	padding: 8em 0;
+	color: #FFF;
+	background-size: cover;
+	background-position: center;
+}
+
+.posts article:first-child .post-header {
+	padding-top: 12em;
+}
+
+.post-header .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	background-image: linear-gradient(to bottom left,rgba(0, 215, 133, 0.7),rgba(0, 149, 232, 0.9));
+	box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.post-header .container {
+	position: relative;
+	z-index: 10;
+}
+
+.post-content {
+	padding: 4em 0;
+}
+
+.post-body {
+	font-size: 1.275em;
+	line-height: 2em;
+}
+
+.post-title {
+	font-size: 3.875em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.post-title a,
+.post-title a:hover,
+.post-title a:focus {
+	color: #FFF;
+}
+
+.post-sidebar {
+	padding: 1em 0;
+}
+
+.post-author {
+	opacity: 0.7;
+	transition: opacity 0.3s;
+}
+
+.post-author:hover {
+	opacity: 1;
+}
+
+.post-author img {
+	width: 100px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.post-author img,
+.post-author ul,
+.post-author p {
+	margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 1.8em;
+}
+
+.post-annotation-wrapper {
+	position: relative;
+}
+
+.post-annotation-wrapper .post-annotation {
+	position: absolute;
+	top: 0;
+	text-align: right;
+	width: 28%;
+	left: -30%;
+	padding-right: 15px;
+	border-right: 4px solid rgba(0, 0, 0, 0.15);
+}
+
+.post-annotation p {
+	font-size: .9em;
+	line-height: 1.4em;
+}

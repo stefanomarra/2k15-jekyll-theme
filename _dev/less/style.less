@@ -1,0 +1,61 @@
+// Variables
+@light: #AAA;
+@dark: #1B1B1B;
+@primary: #0095E8;
+
+@import "header.less";
+@import "post.less";
+@import "nav.less";
+
+@media (min-width: 992px) {
+	.container {
+		width: 920px;
+	}
+}
+
+.post-body h2, .post-body h3, .post-body h4 {
+	margin: 40px 0 20px;
+}
+
+p {
+	font-family: 'Open Sans', Arial, Sans-Serif;
+}
+
+pre {
+	background-color: #F0F0F0;
+	padding: 20px;
+	border: none;
+}
+
+pre code {
+	font-family: monospace, serif;
+	font-size: 1em;
+}
+
+a {
+	color: @primary;
+	padding-bottom: 3px;
+	border-bottom: 3px solid rgba(red(@primary), green(@primary), blue(@primary), 0);
+	transition: all 0.3s;
+}
+
+a:hover,
+a:focus {
+	color: darken(@primary, 10%);
+	text-decoration: none;
+	border-bottom: 3px solid rgba(red(@primary), green(@primary), blue(@primary), 0.1);
+}
+
+a.icon,
+a.icon:hover,
+a.icon:focus {
+	border-bottom: none;
+}
+
+.separator {
+	background-color: rgba(0, 0, 0, 0.15);
+	border: none;
+	height: 4px;
+	width: 30%;
+	margin: 5px 0 15px 0;
+}

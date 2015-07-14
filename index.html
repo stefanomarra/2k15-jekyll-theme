@@ -2,22 +2,60 @@
 layout: default
 ---
 
-<div class="home">
+<section class="posts wrapper">
+  {% for post in site.posts %}
+    {% if post.title %}
+      <article class="post">
+        <header class="post-header" style="background-image:url('{{ post.cover_image }}');">
+          <div class="overlay"></div>
+          <div class="container">
+            <h3>
+              {% for category in post.categories %}
+                {{ category }}
+              {% endfor %}
+            </h3>
+            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <hr class="separator" />
+            <div class="post-meta">
+              <span class="item"> By {{ site.author_name }}</span>
+              <span class="item"><i class="fa fa-clock-o"></i> {{ post.date | date: "%-d %B %Y" }}</span>
+            </div>
+          </div>
+        </header>
+        <div class="post-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9">
+                <div class="post-body">
+                  {{ post.content }}
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="post-sidebar">
+                  <div class="post-author">
+                    <img src="{{ site.author_image }}" />
+                    <h4>{{ site.author_name }}</h4>
+                    <hr class="separator" />
+                    <ul class="list-unstyled list-inline">
+                      {% if site.twitter_url %}<li><a class="icon" href="{{ site.twitter_url }}"><i class="fa fa-twitter-square"></i></a></li>{% endif %}
+                      {% if site.facebook_url %}<li><a class="icon" href="{{ site.facebook_url }}"><i class="fa fa-facebook-square"></i></a></li>{% endif %}
+                      {% if site.github_url %}<li><a class="icon" href="{{ site.github_url }}"><i class="fa fa-github-square"></i></a></li>{% endif %}
+                      {% if site.youtube_url %}<li><a class="icon" href="{{ site.youtube_url }}"><i class="fa fa-youtube-square"></i></a></li>{% endif %}
+                      {% if site.dribbble_url %}<li><a class="icon" href="{{ site.dribbble_url }}"><i class="fa fa-dribbble"></i></a></li>{% endif %}
+                      {% if site.googleplus_url %}<li><a class="icon" href="{{ site.googleplus_url }}"><i class="fa fa-google-plus-square"></i></a></li>{% endif %}
+                      {% if site.instagram_url %}<li><a class="icon" href="{{ site.instagram_url }}"><i class="fa fa-instagram"></i></a></li>{% endif %}
+                      {% if site.pinterest_url %}<li><a class="icon" href="{{ site.pinterest_url }}"><i class="fa fa-pinterest-square"></i></a></li>{% endif %}
+                      {% if site.linkedin_url %}<li><a class="icon" href="{{ site.linkedin_url }}"><i class="fa fa-linkedin-square"></i></a></li>{% endif %}
+                    </ul>
+                    <p>{{ site.author_bio }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    {% endif %}
+  {% endfor %}
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</section>
