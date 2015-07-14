@@ -1,15 +1,81 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+<section class="posts wrapper">
+{% assign author = site.data.authors[page.author] %}
+	<article class="post">
+		<header class="post-header" style="background-image:url('{{ page.cover_image }}');">
+			<div class="overlay"></div>
+			<div class="container">
+				<h3>
+					{% for category in page.categories %}
+						{{ category }}
+					{% endfor %}
+				</h3>
+				<h2 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+				<hr class="separator" />
+				<div class="post-meta">
+					<span class="item"> By {{ author.name }}</span>
+					<span class="item"><i class="fa fa-clock-o"></i> {{ page.date | date: "%-d %B %Y" }}</span>
+				</div>
+			</div>
+		</header>
+		<div class="post-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="post-body">
+							{{ content }}
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-sidebar">
+							<div class="post-author">
+								<img src="{{ author.image }}" />
+								<h4>{{ author.name }}</h4>
+								<hr class="separator" />
+								<ul class="list-unstyled list-inline">
+									{% if author.twitter_url != '' %}<li><a class="icon" href="{{ author.twitter_url }}"><i class="fa fa-twitter-square"></i></a></li>{% endif %}
+									{% if author.facebook_url != '' %}<li><a class="icon" href="{{ author.facebook_url }}"><i class="fa fa-facebook-square"></i></a></li>{% endif %}
+									{% if author.github_url != '' %}<li><a class="icon" href="{{ author.github_url }}"><i class="fa fa-github-square"></i></a></li>{% endif %}
+									{% if author.youtube_url != '' %}<li><a class="icon" href="{{ author.youtube_url }}"><i class="fa fa-youtube-square"></i></a></li>{% endif %}
+									{% if author.dribbble_url != '' %}<li><a class="icon" href="{{ author.dribbble_url }}"><i class="fa fa-dribbble"></i></a></li>{% endif %}
+									{% if author.googleplus_url != '' %}<li><a class="icon" href="{{ author.googleplus_url }}"><i class="fa fa-google-plus-square"></i></a></li>{% endif %}
+									{% if author.instagram_url != '' %}<li><a class="icon" href="{{ author.instagram_url }}"><i class="fa fa-instagram"></i></a></li>{% endif %}
+									{% if author.pinterest_url != '' %}<li><a class="icon" href="{{ author.pinterest_url }}"><i class="fa fa-pinterest-square"></i></a></li>{% endif %}
+									{% if author.linkedin_url != '' %}<li><a class="icon" href="{{ author.linkedin_url }}"><i class="fa fa-linkedin-square"></i></a></li>{% endif %}
+								</ul>
+								<p>{{ author.bio }}</p>
+							</div>
+						</div> <!-- .post-sidebar -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="post-footer">
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+		</footer>
+		{% if page.comments %}
+			<div class="post-comments">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9">
+							<div id="disqus_thread"></div>
+							<script type="text/javascript">
+							    /* * * DON'T EDIT BELOW THIS LINE * * */
+							    (function() {
+							        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+							        dsq.src = '//' + config.disqus_shortname + '.disqus.com/embed.js';
+							        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+							    })();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endif %}
+	</article>
 
-</div>
+</section>

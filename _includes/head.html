@@ -13,4 +13,14 @@
 
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+	<script type="text/javascript">
+		var config = {
+			'disqus_shortname': '{{ site.theme_disqus_shortname }}'
+			// 'analytics_id': '{{ site.theme_analytics_id }}',
+			// 'analytics_domain': '{{ site.theme_analytics_domain }}',
+			// 'readingtime': {{ site.theme_reading_time }},
+			// 'autoload_comments': {{ site.theme_autoload_comments }}
+		};
+	</script>
 </head>

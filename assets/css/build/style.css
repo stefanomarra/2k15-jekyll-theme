@@ -12,6 +12,12 @@
   padding: 5px 10px;
   border-radius: 4px;
 }
+.site-footer {
+  margin-top: 3em;
+  padding: 4em 0;
+  background-color: #F5F5F5;
+  color: #BBB;
+}
 .post-header {
   position: relative;
   padding: 8em 0;
@@ -19,8 +25,8 @@
   background-size: cover;
   background-position: center;
 }
-.posts article:first-child .post-header {
-  padding-top: 12em;
+article:first-child .post-header {
+  padding-top: 14em;
 }
 .post-header .overlay {
   position: absolute;
@@ -37,6 +43,18 @@
 .post-header .container {
   position: relative;
   z-index: 10;
+}
+.post-footer {
+  margin-bottom: 4em;
+}
+.post-meta .item {
+  margin-right: 10px;
+}
+.post-meta .item i {
+  position: relative;
+  font-size: 1.4em;
+  margin-right: 3px;
+  top: 1px;
 }
 .post-content {
   padding: 4em 0;
@@ -221,7 +239,7 @@
   padding: 1.2em;
   color: #ffffff;
   font-size: 1.2em;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 #site-nav li:last-child a {
   border-bottom: none;
@@ -247,7 +265,7 @@
     padding: 1.2em;
     margin-left: 0;
     color: #ffffff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   #site-nav.is-fixed li:last-child a {
     border-bottom: none;
@@ -367,7 +385,7 @@
   padding: 8px 15px;
   background-color: #FFF;
   border: 2px solid #DDD;
-  border-radius: 4px;
+  border-radius: 3px;
   font-size: 1.2em;
   color: #b7b7b7;
 }
@@ -415,7 +433,7 @@ a:hover,
 a:focus {
   color: #0074b5;
   text-decoration: none;
-  border-bottom: 3px solid rgba(0, 149, 232, 0.1);
+  border-bottom: 3px solid rgba(0, 149, 232, 0.15);
 }
 a.icon,
 a.icon:hover,

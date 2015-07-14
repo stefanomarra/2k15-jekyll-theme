@@ -6,6 +6,7 @@ categories: Frontend Development
 cover_image: "/media/station.jpg"
 featured: true
 comments: false
+author: stefano
 ---
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit amet quam id libero suscipit venenatis.

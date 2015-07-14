@@ -6,6 +6,7 @@ categories: Jekyll Themes
 cover_image: ""
 featured: false
 comments: true
+author: stefano
 ---
 
 Astro is a content focused responsive theme for the Ghost blogging platform. Designed from the bottom up to be high performance, user friendly, and accessible on all platforms. Astro adapts to the users device, so it looks great on smartphones, tablets, TVs, and even the latest 4K monitors.

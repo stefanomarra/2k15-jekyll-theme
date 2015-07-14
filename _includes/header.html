@@ -1,21 +1,21 @@
 <header id="site-header">
 
-  <div id="site-logo">
-    <a href="{{ site.baseurl }}" alt="Logo">{{ site.title }}</a>
-  </div>
+	<div id="site-logo">
+		<a href="{{ site.baseurl }}" alt="Logo">{{ site.title }}</a>
+	</div>
 
 </header>
 
 <div id="site-nav">
-  <a class="site-nav-trigger" href="#">Menu<span></span></a>
-  <nav id="site-primary-nav">
-    <ul>
-      <li><a class="page-link" href="{{ site.baseurl }}">Home</a></li>
-      {% for page in site.pages %}
-        {% if page.title %}
-          <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </nav> <!-- .site-primary-nav -->
+	<a class="site-nav-trigger" href="#">Menu<span></span></a>
+	<nav id="site-primary-nav">
+		<ul>
+			<li><a class="page-link" href="{{ site.baseurl }}">Home</a></li>
+			{% for page in site.pages %}
+				{% if page.title %}
+					<li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</nav> <!-- .site-primary-nav -->
 </div>

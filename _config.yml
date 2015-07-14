@@ -7,7 +7,7 @@ description: 				"Test theme for Jekyll blogging platform. It will be available 
 baseurl: 					""
 url: 						"http://www.lioncodestudio.com"
 logourl: 					"/assets/img/bloglogo.jpg"
-paginate: 					3
+paginate: 					5
 paginate_path: 				"/blog/page:num"
 
 # Author Settings
@@ -29,6 +29,7 @@ pinterest_url:  			"http://pinterest.com"
 linkedin_url:  				"http://linkedin.com"
 
 # Theme Settings
+theme_disqus_shortname: 	"lioncodestudio"
 theme_analytics_id: 		"UA-28282324-1"
 theme_reading_time: 		true
 

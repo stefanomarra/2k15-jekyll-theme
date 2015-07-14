@@ -6,6 +6,7 @@ categories: Video
 cover_image: ""
 featured: false
 comments: true
+author: stefano
 ---
 
 This video is a collaboration between Sheldon Neill and Colin Delehanty. All timelapses were shot on the Canon 5D Mark II with a variety of Canon L and Zeiss CP.2 Lenses.

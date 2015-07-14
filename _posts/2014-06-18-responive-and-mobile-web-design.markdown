@@ -6,6 +6,7 @@ categories: Frontend Development
 cover_image: "/media/mobile.jpg"
 featured: false
 comments: true
+author: laura
 ---
 
 Responsive web design (RWD) is a web design approach aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from mobile phones to desktop computer monitors).

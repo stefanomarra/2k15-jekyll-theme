@@ -6,6 +6,7 @@ categories: Developer Workflow
 cover_image: "/media/desk.jpg"
 featured: true
 comments: true
+author: stefano
 ---
 
 Why use Grunt? In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it, a task runner can do most of that mundane work for you—and your team—with basically zero effort.
@@ -88,8 +89,13 @@ In this example, `grunt.file.readJSON('package.json')` imports the JSON metadata
 
 You may store any arbitrary data inside of the configuration object, and as long as it doesn't conflict with properties your tasks require, it will be otherwise ignored. Also, because this is JavaScript, you're not limited to JSON; you may use any valid JS here. You can even programmatically generate the configuration if necessary.
 
-Like most tasks, the `grunt-contrib-uglify` plugin's uglify task expects its configuration to be specified in a property of the same name. Here, the banner option is specified, along with a single uglify target named build that minifies a single source file to a single destination file.
-
+<div class="post-annotation-wrapper">
+	Like most tasks, the `grunt-contrib-uglify` plugin's uglify task expects its configuration to be specified in a property of the same name. Here, the banner option is specified, along with a single uglify target named build that minifies a single source file to a single destination file.
+	<div class="post-annotation visible-lg">
+		<strong>Annotation</strong>
+		<p>This is an example of annotation in this Jekyll theme.</p>
+	</div>
+</div>
 ***
 
 This extract of text has been used as a demonstration of the Astro Ghost Theme. For more information on Grunt, see http://gruntjs.com.
