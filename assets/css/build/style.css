@@ -109,6 +109,10 @@
   z-index: 100;
   box-shadow: 0 0 0 2px #1b1b1b;
 }
+.site-nav-trigger:hover,
+.site-nav-trigger:focus {
+  border: none;
+}
 .site-nav-trigger.menu-is-open {
   box-shadow: 0 0 0 2px transparent;
   background-color: transparent;
@@ -358,6 +362,25 @@
     -ms-transform: scale(1);
     transform: scale(1);
   }
+}
+.pager li > a {
+  padding: 8px 15px;
+  background-color: #FFF;
+  border: 2px solid #DDD;
+  border-radius: 4px;
+  font-size: 1.2em;
+  color: #b7b7b7;
+}
+.pager li > a:hover {
+  background-color: #0095e8;
+  color: #FFF;
+  border-color: #0095e8;
+}
+.pager .previous a i {
+  margin-right: 5px;
+}
+.pager .next a i {
+  margin-left: 5px;
 }
 @media (min-width: 992px) {
   .container {

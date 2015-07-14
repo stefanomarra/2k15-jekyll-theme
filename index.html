@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section class="posts wrapper">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     {% if post.title %}
       <article class="post">
         <header class="post-header" style="background-image:url('{{ post.cover_image }}');">
@@ -57,5 +57,7 @@ layout: default
       </article>
     {% endif %}
   {% endfor %}
+
+  {% include pagination.html %}
 
 </section>
