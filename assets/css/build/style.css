@@ -76,8 +76,13 @@ article:first-child .post-header {
 }
 .post-sidebar {
   padding: 1em 0;
-  position: relative;
-  top: -120px;
+}
+@media only screen and (min-width: 992px) {
+  .post-sidebar {
+    padding: 1em 0;
+    position: relative;
+    top: -120px;
+  }
 }
 .post-author .author-social {
   opacity: 0.7;
@@ -639,6 +644,10 @@ pre,
 }
 p {
   font-family: 'Open Sans', Arial, Sans-Serif;
+}
+#scrollbubble {
+  font-family: 'Open Sans', Arial, Sans-Serif !important;
+  padding: 8px 12px !important;
 }
 a {
   color: #0095e8;
