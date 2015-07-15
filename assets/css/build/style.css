@@ -64,7 +64,7 @@ article:first-child .post-header {
   line-height: 2em;
 }
 .post-title {
-  font-size: 3.875em;
+  font-size: 3em;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -76,13 +76,6 @@ article:first-child .post-header {
 }
 .post-sidebar {
   padding: 1em 0;
-}
-@media only screen and (min-width: 992px) {
-  .post-sidebar {
-    padding: 1em 0;
-    position: relative;
-    top: -120px;
-  }
 }
 .post-author .author-social {
   opacity: 0.7;
@@ -121,6 +114,16 @@ article:first-child .post-header {
 .post-annotation p {
   font-size: .9em;
   line-height: 1.4em;
+}
+@media only screen and (min-width: 992px) {
+  .post-title {
+    font-size: 3.875em;
+  }
+  .post-sidebar {
+    padding: 1em 0;
+    position: relative;
+    top: -120px;
+  }
 }
 .site-nav-trigger {
   position: fixed;
