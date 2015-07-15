@@ -43,11 +43,11 @@ article:first-child .post-header {
 }
 
 .post-content {
-	padding: 4em 0;
+	padding-top: 4em;
 }
 
 .post-body {
-	font-size: 1.275em;
+	font-size: 1.2em;
 	line-height: 2em;
 }
 
@@ -61,18 +61,21 @@ article:first-child .post-header {
 .post-title a:hover,
 .post-title a:focus {
 	color: #FFF;
+	border-bottom: none;
 }
 
 .post-sidebar {
 	padding: 1em 0;
+	position: relative;
+	top: -120px;
 }
 
-.post-author {
+.post-author .author-social {
 	opacity: 0.7;
 	transition: opacity 0.3s;
 }
 
-.post-author:hover {
+.post-author:hover .author-social {
 	opacity: 1;
 }
 
@@ -80,6 +83,7 @@ article:first-child .post-header {
 	width: 100px;
 	border-radius: 50%;
 	margin-right: 10px;
+	border: 4px solid #FFF;
 }
 
 .post-author img,

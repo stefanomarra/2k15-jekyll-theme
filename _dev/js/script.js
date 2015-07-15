@@ -59,4 +59,6 @@ $(document).ready(function($){
 		$(this).parent().css('position', 'relative');
 	});
 
+	$('.reading-time').readingTime();
+
 });

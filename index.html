@@ -27,7 +27,11 @@ layout: default
 					<div class="row">
 						<div class="col-md-9">
 							<div class="post-body">
-								{{ post.content }}
+								{% if post.content contains '<!--more-->' %}
+									{{ post.content | split:'<!--more-->' | first }}
+								{% else %}
+									{{ post.content }}
+								{% endif %}
 							</div>
 						</div>
 						<div class="col-md-3">
@@ -36,7 +40,7 @@ layout: default
 									<img src="{{ author.image }}" />
 									<h4>{{ author.name }}</h4>
 									<hr class="separator" />
-									<ul class="list-unstyled list-inline">
+									<ul class="list-unstyled list-inline author-social">
 										{% if author.twitter_url != '' %}<li><a class="icon" href="{{ author.twitter_url }}"><i class="fa fa-twitter-square"></i></a></li>{% endif %}
 										{% if author.facebook_url != '' %}<li><a class="icon" href="{{ author.facebook_url }}"><i class="fa fa-facebook-square"></i></a></li>{% endif %}
 										{% if author.github_url != '' %}<li><a class="icon" href="{{ author.github_url }}"><i class="fa fa-github-square"></i></a></li>{% endif %}

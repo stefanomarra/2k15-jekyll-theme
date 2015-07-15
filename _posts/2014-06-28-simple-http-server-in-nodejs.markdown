@@ -11,9 +11,11 @@ author: laura
 
 Node.js is a platform built on [Chrome’s JavaScript runtime](http://code.google.com/p/v8/) for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
 
-<!--more-->
-
 This simple web server written in Node responds with “Hello World” for every request. To run the server, put the code into a file example.js and execute it with the node program from the command line.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<!--more-->
 
 {% highlight javascript %}
 var http = require('http');

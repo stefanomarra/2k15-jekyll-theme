@@ -11,9 +11,10 @@ author: stefano
 
 Astro is a content focused responsive theme for the Ghost blogging platform. Designed from the bottom up to be high performance, user friendly, and accessible on all platforms. Astro adapts to the users device, so it looks great on smartphones, tablets, TVs, and even the latest 4K monitors.
 
-<!--more-->
-
 Taking advantage of the ghost platform, Astro has two different post styles. The standard style is great for update posts and short articles, while featured posts have full page titles with image backdrops, and work great with large articles, tutorials and other documentation.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<!--more-->
 
 ## Features
 

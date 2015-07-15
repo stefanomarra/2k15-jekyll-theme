@@ -11,9 +11,9 @@ author: laura
 
 Responsive web design (RWD) is a web design approach aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from mobile phones to desktop computer monitors).
 
-<!--more-->
-
 A site designed with RWD adapts the layout to the viewing environment by using fluid, proportion-based grids, flexible images,and CSS3 media queries, an extension of the @media rule.
+
+<!--more-->
 
 * The fluid grid concept calls for page element sizing to be in relative units like percentages, rather than absolute units like pixels or points.
 
