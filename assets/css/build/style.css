@@ -412,6 +412,37 @@ article:first-child .post-header {
 .pager .next a i {
   margin-left: 5px;
 }
+.share {
+  padding: 2em;
+  margin: 3em 0 1.5em;
+  background-color: #F0F0F0;
+  border-radius: 4px;
+}
+.share ul {
+  margin-bottom: 0;
+}
+.share li {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.share li > a {
+  padding: 8px 15px;
+  background-color: #FFF;
+  border: 2px solid #DDD;
+  border-radius: 3px;
+  font-size: 1.2em;
+  color: #b7b7b7;
+}
+.share li > a:hover {
+  background-color: #0095e8;
+  color: #FFF;
+  border-color: #0095e8;
+}
+.share a i {
+  margin-right: 5px;
+}
 .highlight pre code * {
   white-space: nowrap;
 }
