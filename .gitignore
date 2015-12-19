@@ -1,3 +1,6 @@
 _site
+_posts
+media
+*.md
 .sass-cache
 node_modules

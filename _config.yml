@@ -1,14 +1,14 @@
 
 
 # Site Settings
-title:                      "Lion Code Studio"
-email:                      "your-email@domain.com"
-description:                "Test theme for Jekyll blogging platform. It will be available on themeforest."
-baseurl:                    ""
-url:                        "http://www.lioncodestudio.com"
-logourl:                    "/assets/img/bloglogo.jpg"
+title:                      "Stefano Marra"
+email:                      "stefano.marra1987@gmail.com"
+description:                "I’m Stefano: Full-stack Polyvalent Web Developer and Designer."
+baseurl:                    "http://www.stefanomarra.com"
+url:                        "http://www.stefanomarra.com"
+logourl:                    "/assets/img/bloglogo.png"
 paginate:                   5
-paginate_path:              "/blog/page:num"
+paginate_path:              "/blog/page:num/"
 
 # Author Settings
 author_name:                "Stefano Marra"
@@ -29,11 +29,12 @@ pinterest_url:              "http://pinterest.com"
 linkedin_url:               "http://linkedin.com"
 
 # Theme Settings
-theme_disqus_shortname:     "lioncodestudio"
-theme_analytics_id:         "UA-28282324-1"
+theme_disqus_shortname:     "stefanomarrablog"
+theme_analytics_id:         "UA-65607011-1"
 theme_reading_time:         true
 
 # Build Settings
 #markdown:                   kramdown
+gems: [jekyll-paginate]
 markdown: redcarpet
 highlighter: pygments
