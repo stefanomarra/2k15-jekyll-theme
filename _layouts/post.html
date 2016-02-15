@@ -5,7 +5,7 @@ layout: default
 <section class="posts wrapper">
 {% assign author = site.data.authors[page.author] %}
 	<article class="post">
-		<header class="post-header" style="background-image:url('{{ page.cover_image }}');">
+		<header class="post-header" style="background-image:url('{{ site.url }}{{ page.cover_image }}');">
 			<div class="overlay"></div>
 			<div class="container">
 				<h3>
@@ -13,7 +13,7 @@ layout: default
 						{{ category }}
 					{% endfor %}
 				</h3>
-				<h2 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+				<h2 class="post-title"><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h2>
 				<hr class="separator" />
 				<div class="post-meta">
 					<span class="item"> By {{ author.name }}</span>
@@ -38,7 +38,7 @@ layout: default
 					<div class="col-md-3">
 						<div class="post-sidebar">
 							<div class="post-author">
-								<img src="{{ author.image }}" />
+								<img src="{{ site.url }}{{ author.image }}" />
 								<h4>{{ author.name }}</h4>
 								<hr class="separator" />
 								<ul class="list-unstyled list-inline author-social">
