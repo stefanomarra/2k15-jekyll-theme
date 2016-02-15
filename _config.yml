@@ -4,8 +4,8 @@
 title:                      "2k15 Jekyll Theme"
 email:                      "stefano.marra1987@gmail.com"
 description:                "I’m Stefano: Full-stack Polyvalent Web Developer and Designer."
-baseurl:                    "http://www.stefanomarra.com"
-url:                        "http://www.stefanomarra.com"
+baseurl:                    "http://stefanomarra.github.io/2k15-jekyll-theme"
+url:                        "http://stefanomarra.github.io/2k15-jekyll-theme"
 logourl:                    "/assets/img/bloglogo.png"
 paginate:                   5
 paginate_path:              "/blog/page:num/"
