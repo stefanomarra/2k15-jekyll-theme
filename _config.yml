@@ -36,7 +36,7 @@ theme_reading_time:         true
 # Build Settings
 #markdown:                   kramdown
 gems:                       [jekyll-paginate]
-markdown:                   redcarpet
-highlighter:                pygments
+markdown:                   kramdown
+highlighter:                rouge
 
 exclude: ["README.md", gulpfile.js", "Gemfile", "Gemfile.lock", "package.json", "node_modules"]
