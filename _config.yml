@@ -13,7 +13,7 @@ paginate_path:              "/blog/page:num/"
 # Author Settings
 author_name:                "Stefano Marra"
 author_url:                 "http://www.stefanomarra.com"
-author_bio:                 "Stefano Marra has built a career and reputation by breaking the rules."
+author_bio:                 "A Web Developer and Web Designer based in Rome, Italy"
 author_email:               "stefano.marra1987@gmail.com"
 author_image:               "/assets/img/authorimage.jpg"
 
@@ -30,11 +30,13 @@ linkedin_url:               "http://linkedin.com"
 
 # Theme Settings
 theme_disqus_shortname:     "stefanomarrablog"
-theme_analytics_id:         "UA-65607011-1"
+theme_analytics_id:         "" # UA-65607011-1
 theme_reading_time:         true
 
 # Build Settings
 #markdown:                   kramdown
-gems: [jekyll-paginate]
-markdown: redcarpet
-highlighter: pygments
+gems:                       [jekyll-paginate]
+markdown:                   redcarpet
+highlighter:                pygments
+
+exclude: ["README.md", gulpfile.js", "package.json", "node_modules"]

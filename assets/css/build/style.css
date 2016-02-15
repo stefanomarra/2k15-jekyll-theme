@@ -8,7 +8,7 @@
   font-size: 1.6em;
   color: #FFF;
   font-weight: 700;
-  background-color: #1b1b1b;
+  background-color: #1B1B1B;
   padding: 5px 10px;
   border-radius: 4px;
 }
@@ -131,13 +131,13 @@ article:first-child .post-header {
   right: 5%;
   width: 44px;
   height: 44px;
-  background: #1b1b1b;
+  background: #1B1B1B;
   border-radius: 2px;
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
   z-index: 100;
-  box-shadow: 0 0 0 2px #1b1b1b;
+  box-shadow: 0 0 0 2px #1B1B1B;
 }
 .site-nav-trigger:hover,
 .site-nav-trigger:focus {
@@ -152,7 +152,7 @@ article:first-child .post-header {
   display: block;
   width: 20px;
   height: 2px;
-  background: #ffffff;
+  background: #FFF;
   top: 50%;
   margin-top: -1px;
   left: 50%;
@@ -180,30 +180,26 @@ article:first-child .post-header {
 }
 .site-nav-trigger.menu-is-open span::before,
 .site-nav-trigger.menu-is-open span::after {
-  background: #ffffff;
+  background: #FFF;
 }
 .site-nav-trigger span::before {
   top: -6px;
   -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
           transform: rotate(0);
 }
 .site-nav-trigger.menu-is-open span::before {
   top: 0;
   -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
           transform: rotate(135deg);
 }
 .site-nav-trigger span::after {
   bottom: -6px;
   -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
           transform: rotate(0);
 }
 .site-nav-trigger.menu-is-open span::after {
   bottom: 0;
   -webkit-transform: rotate(225deg);
-      -ms-transform: rotate(225deg);
           transform: rotate(225deg);
 }
 #site-nav ul {
@@ -218,18 +214,16 @@ article:first-child .post-header {
   right: 5%;
   bottom: 20px;
   border-radius: 2px;
-  box-shadow: 0 0 0 2px #1b1b1b;
-  background: #1b1b1b;
+  box-shadow: 0 0 0 2px #1B1B1B;
+  background: #1B1B1B;
   visibility: hidden;
   overflow: hidden;
   z-index: 90;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform: scale(0);
-      -ms-transform: scale(0);
           transform: scale(0);
   -webkit-transform-origin: 100% 100%;
-      -ms-transform-origin: 100% 100%;
           transform-origin: 100% 100%;
   -webkit-transition: -webkit-transform 0.3s, visibility 0s 0.3s;
           transition: transform 0.3s, visibility 0s 0.3s;
@@ -237,7 +231,6 @@ article:first-child .post-header {
 #site-nav ul.is-visible {
   visibility: visible;
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
           transform: scale(1);
   -webkit-transition: -webkit-transform 0.3s, visibility 0s 0s;
           transition: transform 0.3s, visibility 0s 0s;
@@ -249,7 +242,7 @@ article:first-child .post-header {
 #site-nav li a {
   display: block;
   padding: 1.2em;
-  color: #ffffff;
+  color: #FFF;
   font-size: 1.2em;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -263,11 +256,10 @@ article:first-child .post-header {
     max-width: 400px;
     bottom: 20px;
     top: auto;
-    background: #1b1b1b;
+    background: #1B1B1B;
     visibility: hidden;
-    box-shadow: 0 0 0 2px #1b1b1b;
+    box-shadow: 0 0 0 2px #1B1B1B;
     -webkit-transform: scale(0);
-        -ms-transform: scale(0);
             transform: scale(0);
   }
   #site-nav.is-fixed ul li {
@@ -276,7 +268,7 @@ article:first-child .post-header {
   #site-nav.is-fixed ul li a {
     padding: 1.2em;
     margin-left: 0;
-    color: #ffffff;
+    color: #FFF;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   #site-nav.is-fixed li:last-child a {
@@ -292,7 +284,6 @@ article:first-child .post-header {
     visibility: visible;
     box-shadow: none;
     -webkit-transform: scale(1);
-        -ms-transform: scale(1);
             transform: scale(1);
     -webkit-transition: all 0s;
             transition: all 0s;
@@ -300,7 +291,6 @@ article:first-child .post-header {
   #site-nav ul.is-visible {
     visibility: visible;
     -webkit-transform: scale(1);
-        -ms-transform: scale(1);
             transform: scale(1);
     -webkit-transition: -webkit-transform 0.3s, visibility 0s 0s;
             transition: transform 0.3s, visibility 0s 0s;
@@ -319,7 +309,6 @@ article:first-child .post-header {
   .site-nav-trigger {
     visibility: hidden;
     -webkit-transform: scale(0);
-        -ms-transform: scale(0);
             transform: scale(0);
     -webkit-transition: -webkit-transform 0.3s, visibility 0s 0.3s;
             transition: transform 0.3s, visibility 0s 0.3s;
@@ -329,7 +318,6 @@ article:first-child .post-header {
     -webkit-transition: all 0s;
             transition: all 0s;
     -webkit-transform: scale(1);
-        -ms-transform: scale(1);
             transform: scale(1);
     -webkit-animation: cd-bounce-in 0.3s linear;
             animation: cd-bounce-in 0.3s linear;
@@ -338,58 +326,48 @@ article:first-child .post-header {
 @-webkit-keyframes cd-slide-in {
   0% {
     -webkit-transform: translateX(100px);
-    -ms-transform: translateX(100px);
     transform: translateX(100px);
   }
   100% {
     -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
     transform: translateY(0);
   }
 }
 @keyframes cd-slide-in {
   0% {
     -webkit-transform: translateX(100px);
-    -ms-transform: translateX(100px);
     transform: translateX(100px);
   }
   100% {
     -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
     transform: translateY(0);
   }
 }
 @-webkit-keyframes cd-bounce-in {
   0% {
     -webkit-transform: scale(0);
-    -ms-transform: scale(0);
     transform: scale(0);
   }
   60% {
     -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
     transform: scale(1.2);
   }
   100% {
     -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
 }
 @keyframes cd-bounce-in {
   0% {
     -webkit-transform: scale(0);
-    -ms-transform: scale(0);
     transform: scale(0);
   }
   60% {
     -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
     transform: scale(1.2);
   }
   100% {
     -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
 }
@@ -402,9 +380,9 @@ article:first-child .post-header {
   color: #b7b7b7;
 }
 .pager li > a:hover {
-  background-color: #0095e8;
+  background-color: #0095E8;
   color: #FFF;
-  border-color: #0095e8;
+  border-color: #0095E8;
 }
 .pager .previous a i {
   margin-right: 5px;
@@ -436,9 +414,9 @@ article:first-child .post-header {
   color: #b7b7b7;
 }
 .share li > a:hover {
-  background-color: #0095e8;
+  background-color: #0095E8;
   color: #FFF;
-  border-color: #0095e8;
+  border-color: #0095E8;
 }
 .share a i {
   margin-right: 5px;
@@ -684,7 +662,7 @@ p {
   padding: 8px 12px !important;
 }
 a {
-  color: #0095e8;
+  color: #0095E8;
   padding-bottom: 3px;
   border-bottom: 3px solid rgba(0, 149, 232, 0);
   -webkit-transition: all 0.3s;

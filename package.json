@@ -1,9 +1,13 @@
 {
-  "name": "jekyll-test",
-  "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "name": "2k15-jekyll-theme",
   "author": "Stefano Marra",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stefanomarra/2k15-jekyll-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stefanomarra/2k15-jekyll-theme/issues"
+  },
   "devDependencies": {
     "browser-sync": "^2.6.5",
     "gulp": "^3.8.11",
