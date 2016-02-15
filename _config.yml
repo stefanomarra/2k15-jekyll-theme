@@ -39,4 +39,4 @@ gems:                       [jekyll-paginate]
 markdown:                   redcarpet
 highlighter:                pygments
 
-exclude: ["README.md", gulpfile.js", "Gemfile", "package.json", "node_modules"]
+exclude: ["README.md", gulpfile.js", "Gemfile", "Gemfile.lock", "package.json", "node_modules"]
