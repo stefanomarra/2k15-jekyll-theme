@@ -41,15 +41,15 @@ layout: default
 									<h4>{{ author.name }}</h4>
 									<hr class="separator" />
 									<ul class="list-unstyled list-inline author-social">
-										{% if author.twitter_url != '' %}<li><a class="icon" href="{{ author.twitter_url }}"><i class="fa fa-twitter-square"></i></a></li>{% endif %}
-										{% if author.facebook_url != '' %}<li><a class="icon" href="{{ author.facebook_url }}"><i class="fa fa-facebook-square"></i></a></li>{% endif %}
-										{% if author.github_url != '' %}<li><a class="icon" href="{{ author.github_url }}"><i class="fa fa-github-square"></i></a></li>{% endif %}
-										{% if author.youtube_url != '' %}<li><a class="icon" href="{{ author.youtube_url }}"><i class="fa fa-youtube-square"></i></a></li>{% endif %}
-										{% if author.dribbble_url != '' %}<li><a class="icon" href="{{ author.dribbble_url }}"><i class="fa fa-dribbble"></i></a></li>{% endif %}
-										{% if author.googleplus_url != '' %}<li><a class="icon" href="{{ author.googleplus_url }}"><i class="fa fa-google-plus-square"></i></a></li>{% endif %}
-										{% if author.instagram_url != '' %}<li><a class="icon" href="{{ author.instagram_url }}"><i class="fa fa-instagram"></i></a></li>{% endif %}
-										{% if author.pinterest_url != '' %}<li><a class="icon" href="{{ author.pinterest_url }}"><i class="fa fa-pinterest-square"></i></a></li>{% endif %}
-										{% if author.linkedin_url != '' %}<li><a class="icon" href="{{ author.linkedin_url }}"><i class="fa fa-linkedin-square"></i></a></li>{% endif %}
+										{% if author.twitter_url != '' %}<li><a class="icon" href="{{ author.twitter_url }}" target="_blank"><i class="fa fa-twitter-square"></i></a></li>{% endif %}
+										{% if author.facebook_url != '' %}<li><a class="icon" href="{{ author.facebook_url }}" target="_blank"><i class="fa fa-facebook-square"></i></a></li>{% endif %}
+										{% if author.github_url != '' %}<li><a class="icon" href="{{ author.github_url }}" target="_blank"><i class="fa fa-github-square"></i></a></li>{% endif %}
+										{% if author.youtube_url != '' %}<li><a class="icon" href="{{ author.youtube_url }}" target="_blank"><i class="fa fa-youtube-square"></i></a></li>{% endif %}
+										{% if author.dribbble_url != '' %}<li><a class="icon" href="{{ author.dribbble_url }}" target="_blank"><i class="fa fa-dribbble"></i></a></li>{% endif %}
+										{% if author.googleplus_url != '' %}<li><a class="icon" href="{{ author.googleplus_url }}" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>{% endif %}
+										{% if author.instagram_url != '' %}<li><a class="icon" href="{{ author.instagram_url }}" target="_blank"><i class="fa fa-instagram"></i></a></li>{% endif %}
+										{% if author.pinterest_url != '' %}<li><a class="icon" href="{{ author.pinterest_url }}" target="_blank"><i class="fa fa-pinterest-square"></i></a></li>{% endif %}
+										{% if author.linkedin_url != '' %}<li><a class="icon" href="{{ author.linkedin_url }}" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>{% endif %}
 									</ul>
 									<p>{{ author.bio }}</p>
 								</div>
